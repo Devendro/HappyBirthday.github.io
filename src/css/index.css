@@ -479,7 +479,31 @@ html {
   animation: secondCanvasTextThree 500ms ease 2s 1 forwards;
 }
 
-.canvas--remove {
+.second--canvas .content h2:nth-child(4) {
+  transform: translateX(5em);
+  top: 1em;
+  left: -2em;
+  opacity: 0;
+  animation: secondCanvasTextThree 500ms ease 2.5s 1 forwards;
+}
+
+.second--canvas .content h2:nth-child(5) {
+  transform: rotate(90deg);
+  top: 1em;
+  left: -2em;
+  opacity: 0;
+  animation: secondCanvasTextThree 500ms ease 2.5s 1 forwards;
+}
+
+.second--canvas .content h2:nth-child(6) {
+  transform: translateX(5em);
+  top: 1em;
+  left: -2em;
+  opacity: 0;
+  animation: secondCanvasTextThree 500ms ease 2.5s 1 forwards;
+}
+
+/* .canvas--remove {
   position: absolute;
   width: 100%;
   height: 0%;
@@ -487,7 +511,7 @@ html {
   bottom: 0;
   background: #fff;
   z-index: 2;
-  animation: canvasRemove 500ms ease 3s 1 forwards;
+  animation: canvasRemove 500ms ease 4.5s 1 forwards;
 }
 
 @keyframes canvasRemove {
@@ -497,7 +521,7 @@ html {
   to {
     height: 100%;
   }
-}
+} */
 
 @keyframes secondCanvasIntro {
   from {
@@ -549,6 +573,43 @@ html {
   }
 }
 
+@keyframes secondCanvasTextFour {
+  from {
+    transform: translateX(5em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes secondCanvasTextFive {
+  from {
+    transform: rotate(90deg);
+    top: 1em;
+    left: -2em;
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    top: 0em;
+    left: 0em;
+    opacity: 1;
+  }
+}
+
+@keyframes secondCanvasText {
+  from {
+    transform: translateX(5em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /*third canvas*/
 
 .third--canvas {
@@ -567,7 +628,7 @@ html {
   top: 0;
   background: url("../images/Star-Transparent-PNG.png") center / cover repeat;
   opacity: 0;
-  animation: thirdCanvasBackground 500ms ease 3s 1 forwards;
+  animation: thirdCanvasBackground 500ms ease 4s 1 forwards;
 }
 
 .star--bg img {
@@ -575,7 +636,7 @@ html {
   width: auto;
   height: auto;
   top: 1em;
-  animation: thirdCanvasBanner 500ms ease 3.5s 1 forwards;
+  animation: thirdCanvasBanner 500ms ease 3s 1 forwards;
   opacity: 0;
 }
 
@@ -704,15 +765,14 @@ html {
   top: 2em;
   opacity: 0;
   animation: thirdCanvasLastText 100ms ease 3s 1 forwards;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .third--canvas .center--line h1 > span.red {
-  color: rgb(255, 42, 42);
+  color: #1080f2;
 }
 
 .third--canvas .center--line h1 > span.yellow {
-  color: rgb(228, 228, 13);
+  color: #1080f2;
 }
 
 .third--canvas .center--line h1 > span.blue {
